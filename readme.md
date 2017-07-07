@@ -2,6 +2,34 @@ This must stop:
 ---------------
 ![Nevar again](https://i.makeagif.com/media/8-22-2014/GO_DT4.gif)
 
+Tasks
+---------
+Basic
+[ ] Make database in Postico
+[ ] Upload data into DB
+[ ] Finish function to append koalas in DB to DOM
+[ ] Pull values out of Add Koala boxes & build data object
+[ ] Verify function to send Koala data to server
+[ ] Build server-side CRUD routing
+    [ ] Verify add Koala button works
+    [ ] Verify DOM updates after add
+[ ] Set up a "how to set up DB" file
+
+Hard
+[ ] Add ability to mark koalas for Transfer
+    [ ] Make new HTML column to insert boolean
+    [ ] Make new HTML column w/ button to Mark for Transfer
+    [ ] Add functionality to transfer button client.js
+[ ] Build Delete button column in html
+[ ] Finish CRUD routing
+  [ ] Add DELETE route
+  [ ] Add UPDATE (put) route (Pro mode)
+[ ] Verify everything works
+[ ] Add some CSS styling
+
+Pro
+[ ] Add form validation
+
 
 Koala Holla
 ===========
