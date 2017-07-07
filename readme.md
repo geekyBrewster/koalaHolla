@@ -17,12 +17,11 @@ Tasks
 
 **Hard**
 [ ] Add ability to mark koalas for Transfer
-  [ ] Make new HTML column to insert boolean
-  [ ] Make new HTML column w/ button to Mark for Transfer
+  [x] Make new HTML column w/ button to Mark for Transfer
   [ ] Add functionality to transfer button client.js
-[ ] Build Delete button column in html
+[ x Build Delete button column in html
 [ ] Finish CRUD routing
-  [ ] Add DELETE route
+  [x] Add DELETE route
   [ ] Add UPDATE (put) route (Pro mode)
 [ ] Verify everything works
 [x] Add some CSS styling

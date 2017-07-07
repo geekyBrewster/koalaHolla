@@ -21,6 +21,32 @@ $( document ).ready( function(){
     // call saveKoala with the new obejct
     saveKoala( objectToSend );
   }); //end addButton on click
+
+  // add delete button click
+  $('#viewKoalas').on('click', '.deleteBtn', function(){
+    console.log("Delete button clicked with id: ", $(this).data('id'));
+    $.ajax({
+      type: 'DELETE',
+      url: '/koalas/' + $(this).data('id'),
+      success: function(response){
+        console.log("Koala removed.");
+        getKoalas();
+      }
+    });
+  }); // end of delete button
+
+$('#viewKoalas').on('click', '.transferBtn', function(req, res){
+  console.log("clicked transfer button with id: " + $(this).data('id'));
+  $.ajax({
+    type: "PUT",
+    url: "/koalas/" + $(this).data('id'),
+    success: function(response){
+      console.log("Koala ready for transfer");
+      getKoalas();
+    }
+  });
+});
+
 }); // end doc ready
 
 function getKoalas(){
@@ -41,6 +67,13 @@ function getKoalas(){
         $tr.append('<td>' + koala.gender + '</td>');
         $tr.append('<td>' + koala.ready_for_transfer + '</td>');
         $tr.append('<td>' + koala.notes + '</td>');
+        if(koala.ready_for_transfer == "N"){
+          $tr.append('<td><button data-id="' + koala.id +'" class="transferBtn">Ready for Trasfer</button></td>');
+        }
+        else{
+          $tr.append('<td></td>');
+        }
+        $tr.append('<td><button data-id="' + koala.id +'" class="deleteBtn">Delete</button></td>');
         $('#viewKoalas').append($tr);
       }
     } // end success

@@ -71,7 +71,54 @@ app.post('/koalas', function(req, res){
       }); // end query
     } // end if
   }); // end pool
-}); // end of GET
+}); // end of POST
+
+// Remove koala from DB
+app.delete('/koalas/:id', function(req, res){
+  pool.connect(function(errorConnectingToDatabase, db, done){
+    if(errorConnectingToDatabase) {
+      console.log('Error connecting to the database.');
+      res.sendStatus(500);
+    } else {
+      var id = req.params.id;
+      var queryText = 'DELETE FROM "koalas" WHERE "id"=$1;';
+      db.query(queryText,[id], function(errorMakingQuery, result){
+        done();
+        if(errorMakingQuery) {
+          console.log('Attempted to query with', queryText);
+          console.log('Error making query');
+          res.sendStatus(500);
+        } else {
+          console.log(queryText);
+          res.send({koalas: result.rows});
+        }
+      }); // end query
+    } // end if
+  }); // end pool
+}); // end of DELETE
+
+app.put('/koalas/:id', function(req, res){
+  pool.connect(function(errorConnectingToDatabase, db, done){
+    if(errorConnectingToDatabase) {
+      console.log('Error connecting to the database.');
+      res.sendStatus(500);
+    } else {
+      var id = req.params.id;
+      var queryText = 'UPDATE "koalas" SET "ready_for_transfer" = \'Y\' WHERE "id" = $1;';
+      db.query(queryText,[id], function(errorMakingQuery, result){
+        done();
+        if(errorMakingQuery) {
+          console.log('Attempted to query with', queryText);
+          console.log('Error making query');
+          res.sendStatus(500);
+        } else {
+          console.log(queryText);
+          res.send({koalas: result.rows});
+        }
+      }); // end query
+    } // end if
+  }); // end pool
+});
 
 // Serve back static files by default
 app.get('/*', function(req, res) {
