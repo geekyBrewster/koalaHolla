@@ -20,6 +20,7 @@ $( document ).ready( function(){
     };
     // call saveKoala with the new obejct
     saveKoala( objectToSend );
+    clearInputs();
   }); //end addButton on click
 
   // add delete button click
@@ -93,4 +94,11 @@ function saveKoala( newKoala ){
       getKoalas();
     } // end success
   }); //end ajax
+}
+function clearInputs(){
+  $('#nameIn').val("");
+  $('#ageIn').val("");
+  $('#genderIn').val("");
+  $('#readyForTransferIn').val("");
+  $('#notesIn').val("");
 }

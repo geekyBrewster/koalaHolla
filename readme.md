@@ -16,19 +16,19 @@ Tasks
 [x] Set up a "how to set up DB" file
 
 **Hard**
-[ ] Add ability to mark koalas for Transfer
+[x] Add ability to mark koalas for Transfer
   [x] Make new HTML column w/ button to Mark for Transfer
-  [ ] Add functionality to transfer button client.js
-[ x Build Delete button column in html
-[ ] Finish CRUD routing
-  [x] Add DELETE route
-  [ ] Add UPDATE (put) route (Pro mode)
-[ ] Verify everything works
+  [x] Add functionality to transfer button client.js
+[x] Build Delete button column in html
+[x] Add DELETE route
+[x] Verify everything works
 [x] Add some CSS styling
 
 **Pro**
 [ ] Add form validation
-[ ] Add additional CSS styling
+[ ] Finish CRUD routing
+  [ ] Add UPDATE route to each koala in the table
+[x] Add additional CSS styling
 
 
 Koala Holla

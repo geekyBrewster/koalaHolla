@@ -1,9 +1,19 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1470777639313-60af88918203?dpr=2&auto=format&fit=crop&w=1080&h=720&q=80&cs=tinysrgb&crop=&bg=");
+  background-size: cover;
+}
+
 header, .container {
   max-width: 900px;
-  border: 2px solid red;
+  color: white;
 }
 header {
   height: 225px;
+  text-shadow: 2px 2px 2px black;
+}
+h1, h2 {
+  margin: 5px 5px;
+  padding: 5px 10px;
 }
 .headerBox {
   text-align: center;
@@ -14,9 +24,16 @@ img {
   height: 200px;
 }
 
-td{
+.container {
+  background-color: rgba(10, 10, 10, .6);
+}
+
+td {
   text-align: center;
-  width: 15%;
+  /*width: 15%;*/
   height: 25px;
-  border: 1px dashed black;
+  border: 1px dashed #064F0C;
+}
+.narrowCol{
+  width: 10%;
 }
