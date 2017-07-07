@@ -5,30 +5,30 @@ This must stop:
 Tasks
 ---------
 **Basic**
-[x] Make database in Postico
-[x] Upload data into DB & saved databaseSetup file
-[x] Finish function to append koalas in DB to DOM
-[x] Pull values out of Add Koala boxes & build data object
-[x] Verify function to send Koala data to server
-[x] Begin building server-side CRUD routing
-  [x] Verify add Koala button works
-  [x] Verify DOM updates after add
-[x] Set up a "how to set up DB" file
+- [x] Make database in Postico
+[- x] Upload data into DB & saved databaseSetup file
+- [x] Finish function to append koalas in DB to DOM
+- [x] Pull values out of Add Koala boxes & build data object
+- [x] Verify function to send Koala data to server
+- [x] Begin building server-side CRUD routing
+  - [x] Verify add Koala button works
+  - [x] Verify DOM updates after add
+- [x] Set up a "how to set up DB" file
 
 **Hard**
-[x] Add ability to mark koalas for Transfer
-  [x] Make new HTML column w/ button to Mark for Transfer
-  [x] Add functionality to transfer button client.js
-[x] Build Delete button column in html
-[x] Add DELETE route
-[x] Verify everything works
-[x] Add some CSS styling
+- [x] Add ability to mark koalas for Transfer
+  - [x] Make new HTML column w/ button to Mark for Transfer
+  - [x] Add functionality to transfer button client.js
+- [x] Build Delete button column in html
+- [x] Add DELETE route
+- [x] Verify everything works
+- [x] Add some CSS styling
 
 **Pro**
-[ ] Add form validation
-[ ] Finish CRUD routing
-  [ ] Add UPDATE route to each koala in the table
-[x] Add additional CSS styling
+- [ ] Add form validation
+- [ ] Finish CRUD routing
+  - [ ] Add UPDATE route to each koala in the table
+- [x] Add additional CSS styling
 
 
 Koala Holla
