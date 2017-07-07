@@ -8,34 +8,42 @@
     <link rel="stylesheet" href="views/styles.css">
   </head>
   <body>
-    <img src="images/icon.png" />
-    <h1>Koala Holla</h1>
-    <h2>1976 Llama Comma Drive</h2>
-    <h2>Walla Walla, WA</h2>
-    <div id="addKoala">
-      <h2>Add Koala</h2>
-      <input type="text" id="nameIn" value="" placeholder="Name">
-      <input type="text" id="ageIn" value="" placeholder="Age">
-      <input type="text" id="genderIn" value="" placeholder="Gender">
-      <input type="text" id="readyForTransferIn" value="" placeholder="Transfer">
-      <input type="text" id="notesIn" value="" placeholder="Notes">
-      <button type="button" id="addButton">Add Koala</button>
-    </div>
-    <div>
-      <h2>All Koalas</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Ready for Transfer</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody id="viewKoalas">
-        </tbody>
-      </table>
+    <header>
+      <div class="headerBox">
+        <img src="images/icon.png" />
+      </div>
+      <div class="headerBox">
+        <h1>Koala Holla</h1>
+        <h2>1976 Llama Comma Drive</h2>
+        <h2>Walla Walla, WA</h2>
+      </div>
+    </header>
+    <div class="container">
+      <div id="addKoala">
+        <h2>Add Koala</h2>
+        <input type="text" id="nameIn" value="" placeholder="Name">
+        <input type="text" id="ageIn" value="" placeholder="Age">
+        <input type="text" id="genderIn" value="" placeholder="Gender">
+        <input type="text" id="readyForTransferIn" value="" placeholder="Transfer">
+        <input type="text" id="notesIn" value="" placeholder="Notes">
+        <button type="button" id="addButton">Add Koala</button>
+      </div>
+      <div>
+        <h2>All Koalas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Ready for Transfer</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody id="viewKoalas">
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>

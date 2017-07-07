@@ -1,0 +1,22 @@
+header, .container {
+  max-width: 900px;
+  border: 2px solid red;
+}
+header {
+  height: 225px;
+}
+.headerBox {
+  text-align: center;
+  float: left;
+}
+
+img {
+  height: 200px;
+}
+
+td{
+  text-align: center;
+  width: 15%;
+  height: 25px;
+  border: 1px dashed black;
+}
