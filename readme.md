@@ -1,73 +1,43 @@
-This must stop:
----------------
-![Nevar again](https://i.makeagif.com/media/8-22-2014/GO_DT4.gif)
-
-Tasks
----------
-**Basic**
-- [x] Make database in Postico
-[- x] Upload data into DB & saved databaseSetup file
-- [x] Finish function to append koalas in DB to DOM
-- [x] Pull values out of Add Koala boxes & build data object
-- [x] Verify function to send Koala data to server
-- [x] Begin building server-side CRUD routing
-  - [x] Verify add Koala button works
-  - [x] Verify DOM updates after add
-- [x] Set up a "how to set up DB" file
-
-**Hard**
-- [x] Add ability to mark koalas for Transfer
-  - [x] Make new HTML column w/ button to Mark for Transfer
-  - [x] Add functionality to transfer button client.js
-- [x] Build Delete button column in html
-- [x] Add DELETE route
-- [x] Verify everything works
-- [x] Add some CSS styling
-
-**Pro**
-- [ ] Add form validation
-- [ ] Finish CRUD routing
-  - [ ] Add UPDATE route to each koala in the table
-- [x] Add additional CSS styling
-
-
-Koala Holla
+# Koala Holla
 ===========
 
-Our client, Koala Holla (1976 Llama Comma Drive, Walla Walla WA) is a non-profit dedicated to the ethical transitioning of koalas from the outdoors (whereupon they may be rained) to urban areas where roofs exist. Your team has been hired build a web app to handle their terrarium residents.
+Our client, Koala Holla (1976 Llama Comma Drive, Walla Walla WA) is a non-profit dedicated to the ethical transitioning of koalas from the outdoors (whereupon they may be rained) to urban areas where roofs exist. Your team has been hired build a web app to handle their terrarium residents. Koala Holla has provided a TSV (tab separated values) spreadsheet of their current inventory. They want a database table that houses this information and can be viewed at any time. After importing the data, create a web app to display the Koalas. Users should be able to add new Koalas to the database through the provided HTML form.
 
-Technologies
+# Technologies
 ------------
 * JQuery
 * Node
 * Express
 * SQL
 
-Client needs
-------------
-Koala Holla has provided a TSV (tab separated values) spreadsheet of their current inventory. They want a database table that houses this information and can be viewed at any time. You should add this table to your existing **antares** database. After importing the data, create a web app to display the Koalas. Users should be able to add new Koalas to the database through the provided HTML form.
+# Getting Started
 
-They have also provided their logo and the source code from when Lou (a KH employee) tried to spin up a JEN stack project to support this, but had to leave for foraging school in Finland before he could finally finish. (JEN is short for jQuery, Express & Node).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Hard Mode
----
-1. Ability for mark Koala ready for transfer. Add a button to each row that reads 'Ready for Transfer'. When the user clicks on the button, it should update the database for the specific Koala. The 'Ready for Transfer' button should only appear for Koalas that haven't yet been marked ready for transfer.
+# Prerequisites
 
-2. Ability to delete Koalas from the database.
+What things you need to install the software and how to install them
 
-3. Add some styling.
+Give examples
+Installing
 
-Pro Mode
----
-1. Ability to edit information for existing Koalas in the db.
-2. Add form validation, additional styling and a README.md.
+A step by step series of examples that tell you have to get a development env running
 
-Delivery
---------
-Upon completion of the project you'll need to provide not only the source (via GitHub url), but also instructions on how the database table should be set up. This can be in a simple databaseSetup.sql file in the repo.
 
-Sample Output
---------
-Your final product may look something like this:
+End with an example of getting some data out of the system or using it for a little demo
 
-![sample](sample.png)
+# Deployment
+
+Add additional notes about how to deploy this on a live system
+
+# Authors
+
+Amanda Kirchner, Dexter St. Pierre
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+# Acknowledgments
+
+Prime Digital Academy staff:
